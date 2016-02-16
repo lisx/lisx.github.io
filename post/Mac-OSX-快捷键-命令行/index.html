@@ -11,15 +11,19 @@
     
 
     
-    <meta name="description" content="尝试写blog">
-<meta property="og:type" content="website">
+    <meta name="description" content="title: ‘Mac OSX 快捷键&amp;amp;命令行’date: 2016-02-16 08:46:53categories: [macbook,快捷键]
+tags:一.Mac OSX 快捷键ctrl+shift                                    快速放大dock的图标会暂时放大，而如果你开启了dock放大Command+Option+W">
+<meta property="og:type" content="article">
 <meta property="og:title" content="HelloBlog">
-<meta property="og:url" content="http://lisx.github.io/index.html">
+<meta property="og:url" content="http://lisx.github.io/post/Mac-OSX-快捷键-命令行/index.html">
 <meta property="og:site_name" content="HelloBlog">
-<meta property="og:description" content="尝试写blog">
+<meta property="og:description" content="title: ‘Mac OSX 快捷键&amp;amp;命令行’date: 2016-02-16 08:46:53categories: [macbook,快捷键]
+tags:一.Mac OSX 快捷键ctrl+shift                                    快速放大dock的图标会暂时放大，而如果你开启了dock放大Command+Option+W">
+<meta property="og:updated_time" content="2016-02-16T00:59:43.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HelloBlog">
-<meta name="twitter:description" content="尝试写blog">
+<meta name="twitter:description" content="title: ‘Mac OSX 快捷键&amp;amp;命令行’date: 2016-02-16 08:46:53categories: [macbook,快捷键]
+tags:一.Mac OSX 快捷键ctrl+shift                                    快速放大dock的图标会暂时放大，而如果你开启了dock放大Command+Option+W">
 
     
     <link rel="alternative" href="/atom.xml" title="HelloBlog" type="application/atom+xml">
@@ -72,12 +76,10 @@
 </div>
     </header>
     <div id="container">
-      <div id="main">
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
   <h1 itemprop="name">
     
       <a href="/post/Mac-OSX-快捷键-命令行/" title="" itemprop="url"></a>
@@ -91,9 +93,16 @@
     
   </p>
 </header>
-    <div class="article-content">
-        
-        <hr>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#tags"><span class="toc-number">1.</span> <span class="toc-text">tags:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一-Mac-OSX-快捷键"><span class="toc-number">2.</span> <span class="toc-text">一.Mac OSX 快捷键</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二-Mac-OSX-命令行："><span class="toc-number">3.</span> <span class="toc-text">二.Mac OSX 命令行：</span></a></li></ol>
+		
+		</div>
+		
+		<hr>
 <p>title: ‘Mac OSX 快捷键&amp;命令行’<br>date: 2016-02-16 08:46:53<br>categories: [macbook,快捷键]</p>
 <h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2><h2 id="一-Mac-OSX-快捷键"><a href="#一-Mac-OSX-快捷键" class="headerlink" title="一.Mac OSX 快捷键"></a>一.Mac OSX 快捷键</h2><p>ctrl+shift                                    快速放大dock的图标会暂时放大，而如果你开启了dock放大<br>Command+Option+W                将所有窗口关闭<br>Command+W                             将当前窗口关闭(可以关闭Safari标签栏,很实用)<br>Command+Option+M                将所有窗口最小化<br>Command+Q                             关闭当前应用程序(相当于Dock鼠标右键推出.很实用)<br>Command+M                             将目前使用的窗口最小化<br>Command+H                             隐藏当前窗口或者软件</p>
 <p>Command＋tab                         为切换当前工作任务<br>Control＋Command＋S              切换控制条的显示和隐藏<br>Command＋i                              常规信息（显示及设置图标属性）<br>Command＋delete                     移到废纸篓（删除）<br>Optionion+鼠标                         拖图像或文件夹可以将图像或文件夹拷贝到其它文件夹中，而不是移动<br>Command+Shift+backspace     清空废纸篓(再加上option一起按能跳过确认对话框)<br>Command+N                             键可以建立新文件夹 “return”或“enter”或“O”键可以打开所选项目<br>Command+Option+esc             键可以强行退出死机程序 </p>
@@ -127,323 +136,57 @@
 <p>mac 删除文件夹里所有的.svn文件<br>直接在终端里面，执行命令（貌似目录名中不能包含空格）：<br>sudo find /Users/cundong/Documents/source -name “.svn” -exec rm -r {} \;<br>把手机中文件取出来<br>adb pull  /sdcard/360Download/source.apk  /Users/cundong/Desktop/target.apk<br>将MAC中文件推到手机中<br>adb push /Users/cundong/Desktop/source.apk  /sdcard/360Download/target.apk</p>
 <p>反编译APK中java文件<br>1).解压APK，得到 classes.dex；<br>2).下载dex2jar <a href="http://code.google.com/p/dex2jar/" target="_blank" rel="external">http://code.google.com/p/dex2jar/</a><br>    解压<br>    给权限 chmod +x dex2jar.sh<br>    运行 ./dex2jar.sh /Users/cundong/Desktop/xxxx.apk<br>3).下载jd-gui可以直接打开看。 <a href="http://java.decompiler.free.fr/" target="_blank" rel="external">http://java.decompiler.free.fr/</a> </p>
 <p>（不断更新）</p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/post/Mac-OSX-快捷键-命令行/#comments" class="ds-thread-count comments-count-link" data-thread-key="post/Mac-OSX-快捷键-命令行/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/post/macbook-pro终端光标快捷键/" title="macbook pro终端光标快捷键" itemprop="url">macbook pro终端光标快捷键</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="lisx" target="_blank" itemprop="author">lisx</a>
-		
-  <p class="article-time">
-    <time datetime="2016-02-16T00:42:47.000Z" itemprop="datePublished"> 发表于 2016-02-16</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p>mac新手收录一下:<br>Ctrl + h        退格删除一个字符，相当于通常的Backspace键<br>Ctrl + u        删除光标之前到行首的字符<br>Ctrl + k        删除光标到行尾的字符<br>Ctrl + c        取消(cancel)当前行输入的命令，相当于Ctrl + Break<br>Ctrl + a        光标移动到行首（Ahead of line），相当于通常的Home键<br>Ctrl + e        光标移动到行尾（End of line）<br>Ctrl + l        清屏，相当于执行clear命令<br>Ctrl + p        调出命令历史中的前一条（Previous）命令，相当于通常的上箭头<br>Ctrl + n        调出命令历史中的下一条（Next）命令，相当于通常的上箭头<br>Ctrl + w        删除从光标位置前到当前所处单词（Word）的开头<br>Ctrl + y        粘贴最后一次被删除的单词<br>Alt+←           光标单词间移动（向左）<br>Alt+→           光标单词向右移动</p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/macbook/">macbook</a>►<a class="article-category-link" href="/categories/macbook/快捷键/">快捷键</a>
-</div>
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/post/macbook-pro终端光标快捷键/#comments" class="ds-thread-count comments-count-link" data-thread-key="post/macbook-pro终端光标快捷键/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/post/redis批量删除key/" title="redis批量删除key" itemprop="url">redis批量删除key</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="lisx" target="_blank" itemprop="author">lisx</a>
-		
-  <p class="article-time">
-    <time datetime="2016-02-16T00:17:54.000Z" itemprop="datePublished"> 发表于 2016-02-16</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <h2 id="批量删除Key"><a href="#批量删除Key" class="headerlink" title="批量删除Key"></a>批量删除Key</h2><ul>
-<li><p>Redis 中有删除单个 Key 的指令 DEL，但好像没有批量删除 Key 的指令，不过我们可以借助 Linux 的 xargs 指令来完成这个动作</p>
-</li>
-<li><p>redis-cli keys “*” | xargs redis-cli del</p>
-</li>
-</ul>
-<h3 id="如果redis-cli没有设置成系统变量，需要指定redis-cli的完整路径"><a href="#如果redis-cli没有设置成系统变量，需要指定redis-cli的完整路径" class="headerlink" title="如果redis-cli没有设置成系统变量，需要指定redis-cli的完整路径"></a>如果redis-cli没有设置成系统变量，需要指定redis-cli的完整路径</h3><ul>
-<li>//如：/opt/redis/redis-cli keys “*” | xargs /opt/redis/redis-cli del</li>
-</ul>
-<h3 id="如果要指定-Redis-数据库访问密码，使用下面的命令"><a href="#如果要指定-Redis-数据库访问密码，使用下面的命令" class="headerlink" title="如果要指定 Redis 数据库访问密码，使用下面的命令"></a>如果要指定 Redis 数据库访问密码，使用下面的命令</h3><ul>
-<li>redis-cli -a password keys “*” | xargs redis-cli -a password del</li>
-</ul>
-<h3 id="如果要访问-Redis-中特定的数据库，使用下面的命令"><a href="#如果要访问-Redis-中特定的数据库，使用下面的命令" class="headerlink" title="如果要访问 Redis 中特定的数据库，使用下面的命令"></a>如果要访问 Redis 中特定的数据库，使用下面的命令</h3><ul>
-<li><p>//下面的命令指定数据序号为0，即默认数据库</p>
-</li>
-<li><p>redis-cli -n 0 keys “*” | xargs redis-cli -n 0 del</p>
-</li>
-</ul>
-<h2 id="删除所有Key"><a href="#删除所有Key" class="headerlink" title="删除所有Key"></a>删除所有Key</h2><ul>
-<li><p>删除所有Key，可以使用Redis的flushdb和flushall命令</p>
-</li>
-<li><p>//删除当前数据库中的所有Key</p>
-</li>
-<li><p>flushdb</p>
-</li>
-<li><p>//删除所有数据库中的key</p>
-</li>
-<li><p>flushall</p>
-</li>
-<li><p>注：keys 指令可以进行模糊匹配，但如果 Key 含空格，就匹配不到了，暂时还没发现好的解决办法。</p>
-</li>
-</ul>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-  <div class="article-tags">
   
-  <span></span> <a href="/tags/redis/">redis</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/post/redis批量删除key/#comments" class="ds-thread-count comments-count-link" data-thread-key="post/redis批量删除key/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/post/Sublime-Text插件：HTML-CSS-JAVASCRIPT-JSON快速格式化/" title="Sublime Text插件：HTML+CSS+JAVASCRIPT+JSON快速格式化" itemprop="url">Sublime Text插件：HTML+CSS+JAVASCRIPT+JSON快速格式化</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="lisx" target="_blank" itemprop="author">lisx</a>
-		
-  <p class="article-time">
-    <time datetime="2016-02-15T07:08:39.000Z" itemprop="datePublished"> 发表于 2016-02-15</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <h2 id="序言"><a href="#序言" class="headerlink" title="序言:"></a>序言:</h2><p>mac 新手,sublime也没有怎么用过,以前一直在用eclipse.<br>现在有个js文件要格式化所以搜索了一下看到了解决方案:<br>(话说markdown也没有用过这个blog还试用一下markdown)</p>
-<h2 id="在Sublime-Text中，按下Command-Shift-P调出命令面板"><a href="#在Sublime-Text中，按下Command-Shift-P调出命令面板" class="headerlink" title="在Sublime Text中，按下Command+Shift+P调出命令面板;"></a>在Sublime Text中，按下Command+Shift+P调出命令面板;</h2><h2 id="调用Install-Package"><a href="#调用Install-Package" class="headerlink" title="调用Install Package;"></a>调用Install Package;</h2><p>输入install 调出 Install Package 选项并回车;<br>(</p>
-<h3 id="这一步就出现问题我的sublime里没有出现Install-Package…"><a href="#这一步就出现问题我的sublime里没有出现Install-Package…" class="headerlink" title="这一步就出现问题我的sublime里没有出现Install Package…"></a>这一步就出现问题我的sublime里没有出现Install Package…</h3><h3 id="下载-Package-Control-sublime-package"><a href="#下载-Package-Control-sublime-package" class="headerlink" title="下载 Package Control.sublime-package"></a>下载 <a href="https://sublime.wbond.net/Package%20Control.sublime-package" target="_blank" rel="external">Package Control.sublime-package</a></h3><h3 id="复制文件到对应目录"><a href="#复制文件到对应目录" class="headerlink" title="复制文件到对应目录:"></a>复制文件到对应目录:</h3><p>复制下载文件到~/Library/Application Support/Sublime Text 2/Installed Packages目录中,没有就新建一个.有的资料写的复制到Packages目录里我的电脑放到这里是没有生效我又移到Installed Packages的.然后重启sublime,这样就可以调出Install Package了.<br>)</p>
-<h2 id="输入pretty，并在列表中选择HTML-CSS-JS-Prettify后回车即可安装"><a href="#输入pretty，并在列表中选择HTML-CSS-JS-Prettify后回车即可安装" class="headerlink" title="输入pretty，并在列表中选择HTML-CSS-JS Prettify后回车即可安装"></a>输入pretty，并在列表中选择HTML-CSS-JS Prettify后回车即可安装</h2><h2 id="快捷使用方法："><a href="#快捷使用方法：" class="headerlink" title="快捷使用方法："></a>快捷使用方法：</h2><p>举例：<br>打开一个压缩的jquery.min.js文件，选中要格式的部分然后按下Ctrl+Shift+H.</p>
-<p>这篇文章使用markdown的#表示h1 和[文字](href)表示超链接.</p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
+	</div>
+		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/sublime/">sublime</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/sublime/">sublime</a>
-  </div>
 
 </div>
 
 
 
-
-<div class="comments-count">
+	<div class="article-share" id="share">
 	
-	  	<span></span>
-		<a href="/post/Sublime-Text插件：HTML-CSS-JAVASCRIPT-JSON快速格式化/#comments" class="ds-thread-count comments-count-link" data-thread-key="post/Sublime-Text插件：HTML-CSS-JAVASCRIPT-JSON快速格式化/" data-count-type="comments">&nbsp;</a>
+	  <div data-url="http://lisx.github.io/post/Mac-OSX-快捷键-命令行/" data-title="HelloBlog" data-tsina="null" class="share clearfix">
+	  </div>
 	
-</div>
+	</div>
+
 
 </footer>
 
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/post/hexo-post/" title="hexo post" itemprop="url">hexo post</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="lisx" target="_blank" itemprop="author">lisx</a>
-		
-  <p class="article-time">
-    <time datetime="2016-02-15T01:48:24.000Z" itemprop="datePublished"> 发表于 2016-02-15</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p>这里用markdown书写 偶没有用过!<br><a href="http://www.appinn.com/markdown/" target="_blank" rel="external">http://www.appinn.com/markdown/</a></p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/blog/">blog</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/博客/">博客</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
+   	       
+	</article>
 	
-	  	<span></span>
-		<a href="/post/hexo-post/#comments" class="ds-thread-count comments-count-link" data-thread-key="post/hexo-post/" data-count-type="comments">&nbsp;</a>
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/post/macbook-pro终端光标快捷键/"  title="macbook pro终端光标快捷键">
+ <strong>下一篇：</strong><br/> 
+ <span>macbook pro终端光标快捷键
+</span>
+</a>
+</div>
+
+</nav>
+
 	
-</div>
-
-</footer>
-
-
-    </article>
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="post/Mac-OSX-快捷键-命令行/" data-title="" data-url="http://lisx.github.io/post/Mac-OSX-快捷键-命令行/"></div>
+</section>
 
 
-
-
-
-
-
-  <nav id="page-nav" class="clearfix">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next<span></span></a>
-  </nav>
-
-</div>
+</div>  
       <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#tags"><span class="toc-number">1.</span> <span class="toc-text">tags:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一-Mac-OSX-快捷键"><span class="toc-number">2.</span> <span class="toc-text">一.Mac OSX 快捷键</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二-Mac-OSX-命令行："><span class="toc-number">3.</span> <span class="toc-text">二.Mac OSX 命令行：</span></a></li></ol>
+ 
+  </div>
 
 <div id="asidepart">
 <div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
@@ -593,14 +336,103 @@ $(document).ready(function(){
       m.removeClass('moveMain');
       a.css('display', 'block').removeClass('fadeOut');
       o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
         
     }
   });
 });
 </script>
 
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
 
 
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"lisx"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
 
 
 
@@ -669,4 +501,4 @@ var _hmt = _hmt || [];
 <!-- Tiny_search End -->
 
   </body>
- </html>
+</html>
