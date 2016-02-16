@@ -4,23 +4,32 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Hello Blog | HelloBlog</title>
+    <title>mac vim处理换行符^M | HelloBlog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="lisx">
     
 
     
-    <meta name="description" content="尝试写blog">
+    <meta name="description" content="sublime惹的祸*用sublime编辑markdown时,下载了一个插件然后更新blog就出问题了没有标题.用vim一看才知道.那个插件把换行符都变成^M了.直接替换还不行.
+在vim编辑模式下输入：
+:%s//\r/g ;由ctrl+V+M获得
+这样会替换掉所有的^M为换行，再保存文件就ok">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello Blog">
-<meta property="og:url" content="http://lisx.github.io/post/Hello-Blog/index.html">
+<meta property="og:title" content="mac vim处理换行符^M">
+<meta property="og:url" content="http://lisx.github.io/post/mac-vim处理换行符-M/index.html">
 <meta property="og:site_name" content="HelloBlog">
-<meta property="og:description" content="尝试写blog">
-<meta property="og:updated_time" content="2016-02-15T01:07:40.000Z">
+<meta property="og:description" content="sublime惹的祸*用sublime编辑markdown时,下载了一个插件然后更新blog就出问题了没有标题.用vim一看才知道.那个插件把换行符都变成^M了.直接替换还不行.
+在vim编辑模式下输入：
+:%s//\r/g ;由ctrl+V+M获得
+这样会替换掉所有的^M为换行，再保存文件就ok">
+<meta property="og:updated_time" content="2016-02-16T01:37:04.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello Blog">
-<meta name="twitter:description" content="尝试写blog">
+<meta name="twitter:title" content="mac vim处理换行符^M">
+<meta name="twitter:description" content="sublime惹的祸*用sublime编辑markdown时,下载了一个插件然后更新blog就出问题了没有标题.用vim一看才知道.那个插件把换行符都变成^M了.直接替换还不行.
+在vim编辑模式下输入：
+:%s//\r/g ;由ctrl+V+M获得
+这样会替换掉所有的^M为换行，再保存文件就ok">
 
     
     <link rel="alternative" href="/atom.xml" title="HelloBlog" type="application/atom+xml">
@@ -79,14 +88,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/post/Hello-Blog/" title="Hello Blog" itemprop="url">Hello Blog</a>
+      <a href="/post/mac-vim处理换行符-M/" title="mac vim处理换行符^M" itemprop="url">mac vim处理换行符^M</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="lisx" target="_blank" itemprop="author">lisx</a>
 		
   <p class="article-time">
-    <time datetime="2016-02-15T01:07:40.000Z" itemprop="datePublished"> 发表于 2016-02-15</time>
+    <time datetime="2016-02-16T01:32:34.000Z" itemprop="datePublished"> 发表于 2016-02-16</time>
     
   </p>
 </header>
@@ -95,14 +104,24 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#sublime惹的祸"><span class="toc-number">1.</span> <span class="toc-text">sublime惹的祸</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在vim编辑模式下输入："><span class="toc-number">2.</span> <span class="toc-text">在vim编辑模式下输入：</span></a></li></ol>
 		
 		</div>
 		
-		  
+		<h2 id="sublime惹的祸"><a href="#sublime惹的祸" class="headerlink" title="sublime惹的祸"></a>sublime惹的祸</h2><p>*用sublime编辑markdown时,下载了一个插件然后更新blog就出问题了没有标题.用vim一看才知道.那个插件把换行符都变成^M了.直接替换还不行.</p>
+<h2 id="在vim编辑模式下输入："><a href="#在vim编辑模式下输入：" class="headerlink" title="在vim编辑模式下输入："></a>在vim编辑模式下输入：</h2><ul>
+<li>:%s/<br>/\r/g ;<br>由ctrl+V+M获得</li>
+<li>这样会替换掉所有的^M为换行，再保存文件就ok</li>
+</ul>
+  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/macbook/">macbook</a>►<a class="article-category-link" href="/categories/macbook/vim/">vim</a>
+</div>
 
 
 </div>
@@ -111,7 +130,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://lisx.github.io/post/Hello-Blog/" data-title="Hello Blog | HelloBlog" data-tsina="null" class="share clearfix">
+	  <div data-url="http://lisx.github.io/post/mac-vim处理换行符-M/" data-title="mac vim处理换行符^M | HelloBlog" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -124,19 +143,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/post/hexo-post/" title="hexo post">
-  <strong>上一篇：</strong><br/>
-  <span>
-  hexo post</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/post/hello-world/"  title="Hello World">
+<a href="/post/Mac-OSX-快捷键-命令行/"  title="Mac OSX 快捷键&amp;命令行">
  <strong>下一篇：</strong><br/> 
- <span>Hello World
+ <span>Mac OSX 快捷键&amp;命令行
 </span>
 </a>
 </div>
@@ -145,7 +156,7 @@
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="post/Hello-Blog/" data-title="Hello Blog" data-url="http://lisx.github.io/post/Hello-Blog/"></div>
+	<div class="ds-thread" data-thread-key="post/mac-vim处理换行符-M/" data-title="mac vim处理换行符^M" data-url="http://lisx.github.io/post/mac-vim处理换行符-M/"></div>
 </section>
 
 
@@ -155,7 +166,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#sublime惹的祸"><span class="toc-number">1.</span> <span class="toc-text">sublime惹的祸</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在vim编辑模式下输入："><span class="toc-number">2.</span> <span class="toc-text">在vim编辑模式下输入：</span></a></li></ol>
  
   </div>
 
