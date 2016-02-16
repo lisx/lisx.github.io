@@ -95,7 +95,7 @@
         
         <h2 id="sublime惹的祸"><a href="#sublime惹的祸" class="headerlink" title="sublime惹的祸"></a>sublime惹的祸</h2><p>*用sublime编辑markdown时,下载了一个插件然后更新blog就出问题了没有标题.用vim一看才知道.那个插件把换行符都变成^M了.直接替换还不行.</p>
 <h2 id="在vim编辑模式下输入："><a href="#在vim编辑模式下输入：" class="headerlink" title="在vim编辑模式下输入："></a>在vim编辑模式下输入：</h2><ul>
-<li>:%s/<br>/\r/g ;<br>由ctrl+V+M获得</li>
+<li>:%s/^M/\r/g #^M必须用ctrl+V+M来获得</li>
 <li>这样会替换掉所有的^M为换行，再保存文件就ok</li>
 </ul>
 
