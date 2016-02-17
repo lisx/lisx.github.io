@@ -4,32 +4,32 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>mac vim处理换行符^M | HelloBlog</title>
+    <title>mac 挂载远程目录 | HelloBlog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="lisx">
     
 
     
-    <meta name="description" content="sublime惹的祸*用sublime编辑markdown时,下载了一个插件然后更新blog就出问题了没有标题.用vim一看才知道.那个插件把换行符都变成^M了.直接替换还不行.
-在vim编辑模式下输入：
-:%s/^M/\r/g #^M必须用ctrl+V+M来获得
-这样会替换掉所有的^M为换行，再保存文件就ok">
+    <meta name="description" content="使用 sshfs 很容易把服务器上远程目录挂载到本地操作，非常方便。在 Mac OSX 使用 brew 很容易安装 sshfs 
+安装 brew 点击：http://brew.sh/index_zh-cn.html 或者把下面这个粘贴到终端就可以安装了
+
+ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/in">
 <meta property="og:type" content="article">
-<meta property="og:title" content="mac vim处理换行符^M">
-<meta property="og:url" content="http://lisx.github.io/post/mac-vim处理换行符-M/index.html">
+<meta property="og:title" content="mac 挂载远程目录">
+<meta property="og:url" content="http://lisx.github.io/post/mac-挂载远程目录/index.html">
 <meta property="og:site_name" content="HelloBlog">
-<meta property="og:description" content="sublime惹的祸*用sublime编辑markdown时,下载了一个插件然后更新blog就出问题了没有标题.用vim一看才知道.那个插件把换行符都变成^M了.直接替换还不行.
-在vim编辑模式下输入：
-:%s/^M/\r/g #^M必须用ctrl+V+M来获得
-这样会替换掉所有的^M为换行，再保存文件就ok">
-<meta property="og:updated_time" content="2016-02-16T01:39:31.000Z">
+<meta property="og:description" content="使用 sshfs 很容易把服务器上远程目录挂载到本地操作，非常方便。在 Mac OSX 使用 brew 很容易安装 sshfs 
+安装 brew 点击：http://brew.sh/index_zh-cn.html 或者把下面这个粘贴到终端就可以安装了
+
+ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/in">
+<meta property="og:updated_time" content="2016-02-17T08:08:28.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="mac vim处理换行符^M">
-<meta name="twitter:description" content="sublime惹的祸*用sublime编辑markdown时,下载了一个插件然后更新blog就出问题了没有标题.用vim一看才知道.那个插件把换行符都变成^M了.直接替换还不行.
-在vim编辑模式下输入：
-:%s/^M/\r/g #^M必须用ctrl+V+M来获得
-这样会替换掉所有的^M为换行，再保存文件就ok">
+<meta name="twitter:title" content="mac 挂载远程目录">
+<meta name="twitter:description" content="使用 sshfs 很容易把服务器上远程目录挂载到本地操作，非常方便。在 Mac OSX 使用 brew 很容易安装 sshfs 
+安装 brew 点击：http://brew.sh/index_zh-cn.html 或者把下面这个粘贴到终端就可以安装了
+
+ruby -e &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/in">
 
     
     <link rel="alternative" href="/atom.xml" title="HelloBlog" type="application/atom+xml">
@@ -91,14 +91,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/post/mac-vim处理换行符-M/" title="mac vim处理换行符^M" itemprop="url">mac vim处理换行符^M</a>
+      <a href="/post/mac-挂载远程目录/" title="mac 挂载远程目录" itemprop="url">mac 挂载远程目录</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="lisx" target="_blank" itemprop="author">lisx</a>
 		
   <p class="article-time">
-    <time datetime="2016-02-16T01:32:34.000Z" itemprop="datePublished"> 发表于 2016-02-16</time>
+    <time datetime="2016-02-17T07:59:17.000Z" itemprop="datePublished"> 发表于 2016-02-17</time>
     
   </p>
 </header>
@@ -107,24 +107,27 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#sublime惹的祸"><span class="toc-number">1.</span> <span class="toc-text">sublime惹的祸</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在vim编辑模式下输入："><span class="toc-number">2.</span> <span class="toc-text">在vim编辑模式下输入：</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#使用-sshfs-很容易把服务器上远程目录挂载到本地操作，非常方便。"><span class="toc-number">1.</span> <span class="toc-text">使用 sshfs 很容易把服务器上远程目录挂载到本地操作，非常方便。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#命令安装-sshfs"><span class="toc-number">2.</span> <span class="toc-text">命令安装  sshfs</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#网站下载"><span class="toc-number">3.</span> <span class="toc-text">网站下载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用-sshfs-挂载远程目录到本地："><span class="toc-number">4.</span> <span class="toc-text">使用 sshfs 挂载远程目录到本地：</span></a></li></ol>
 		
 		</div>
 		
-		<h2 id="sublime惹的祸"><a href="#sublime惹的祸" class="headerlink" title="sublime惹的祸"></a>sublime惹的祸</h2><p>*用sublime编辑markdown时,下载了一个插件然后更新blog就出问题了没有标题.用vim一看才知道.那个插件把换行符都变成^M了.直接替换还不行.</p>
-<h2 id="在vim编辑模式下输入："><a href="#在vim编辑模式下输入：" class="headerlink" title="在vim编辑模式下输入："></a>在vim编辑模式下输入：</h2><ul>
-<li>:%s/^M/\r/g #^M必须用ctrl+V+M来获得</li>
-<li>这样会替换掉所有的^M为换行，再保存文件就ok</li>
-</ul>
+		<h2 id="使用-sshfs-很容易把服务器上远程目录挂载到本地操作，非常方便。"><a href="#使用-sshfs-很容易把服务器上远程目录挂载到本地操作，非常方便。" class="headerlink" title="使用 sshfs 很容易把服务器上远程目录挂载到本地操作，非常方便。"></a>使用 sshfs 很容易把服务器上远程目录挂载到本地操作，非常方便。</h2><p>在 Mac OSX 使用 brew 很容易安装 sshfs </p>
+<p>安装 brew 点击：<a href="http://brew.sh/index_zh-cn.html" target="_blank" rel="external">http://brew.sh/index_zh-cn.html</a> 或者把下面这个粘贴到终端就可以安装了</p>
+<blockquote>
+<pre><code>ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+</code></pre><h2 id="命令安装-sshfs"><a href="#命令安装-sshfs" class="headerlink" title="命令安装  sshfs"></a>命令安装  sshfs</h2><pre><code>brew install sshfs
+</code></pre><h2 id="网站下载"><a href="#网站下载" class="headerlink" title="网站下载"></a>网站下载</h2></blockquote>
+<p>下载：osxfuse-2.7.3.dmg <a href="http://osxfuse.github.io/" target="_blank" rel="external">http://osxfuse.github.io/</a></p>
+<p>下载：sshfs-2.5.0.pkg <a href="https://github.com/osxfuse/sshfs/releases/" target="_blank" rel="external">https://github.com/osxfuse/sshfs/releases/</a></p>
+<p>都安装了就搞定了。</p>
+<h2 id="使用-sshfs-挂载远程目录到本地："><a href="#使用-sshfs-挂载远程目录到本地：" class="headerlink" title="使用 sshfs 挂载远程目录到本地："></a>使用 sshfs 挂载远程目录到本地：</h2><blockquote>
+<pre><code>sshfs -C -o reconnect user@host:dir localdir
+</code></pre><p>更多 sshfs 的用法可以 sshfs -h 查看。</p>
+</blockquote>
   
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/macbook/">macbook</a>►<a class="article-category-link" href="/categories/macbook/vim/">vim</a>
-</div>
 
 
 </div>
@@ -133,7 +136,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://lisx.github.io/post/mac-vim处理换行符-M/" data-title="mac vim处理换行符^M | HelloBlog" data-tsina="null" class="share clearfix">
+	  <div data-url="http://lisx.github.io/post/mac-挂载远程目录/" data-title="mac 挂载远程目录 | HelloBlog" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -146,19 +149,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/post/mac-挂载远程目录/" title="mac 挂载远程目录">
-  <strong>上一篇：</strong><br/>
-  <span>
-  mac 挂载远程目录</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/post/Mac-OSX-快捷键-命令行/"  title="Mac OSX 快捷键&amp;命令行">
+<a href="/post/mac-vim处理换行符-M/"  title="mac vim处理换行符^M">
  <strong>下一篇：</strong><br/> 
- <span>Mac OSX 快捷键&amp;命令行
+ <span>mac vim处理换行符^M
 </span>
 </a>
 </div>
@@ -167,7 +162,7 @@
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="post/mac-vim处理换行符-M/" data-title="mac vim处理换行符^M" data-url="http://lisx.github.io/post/mac-vim处理换行符-M/"></div>
+	<div class="ds-thread" data-thread-key="post/mac-挂载远程目录/" data-title="mac 挂载远程目录" data-url="http://lisx.github.io/post/mac-挂载远程目录/"></div>
 </section>
 
 
@@ -177,7 +172,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#sublime惹的祸"><span class="toc-number">1.</span> <span class="toc-text">sublime惹的祸</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在vim编辑模式下输入："><span class="toc-number">2.</span> <span class="toc-text">在vim编辑模式下输入：</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#使用-sshfs-很容易把服务器上远程目录挂载到本地操作，非常方便。"><span class="toc-number">1.</span> <span class="toc-text">使用 sshfs 很容易把服务器上远程目录挂载到本地操作，非常方便。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#命令安装-sshfs"><span class="toc-number">2.</span> <span class="toc-text">命令安装  sshfs</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#网站下载"><span class="toc-number">3.</span> <span class="toc-text">网站下载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用-sshfs-挂载远程目录到本地："><span class="toc-number">4.</span> <span class="toc-text">使用 sshfs 挂载远程目录到本地：</span></a></li></ol>
  
   </div>
 
