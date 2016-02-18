@@ -83,6 +83,121 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
+      <a href="/post/利用n和nvm管理Node的版本/" title="利用n和nvm管理Node的版本" itemprop="url">利用n和nvm管理Node的版本</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="lisx" target="_blank" itemprop="author">lisx</a>
+		
+  <p class="article-time">
+    <time datetime="2016-02-18T05:56:17.000Z" itemprop="datePublished"> 发表于 2016-02-18</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <p>作者: JeremyWei | 可以转载, 但必须以超链接形式标明文章原始出处和作者信息及版权声明<br>网址: <a href="http://it.taocms.org/03/3079.htm.html" target="_blank" rel="external">http://it.taocms.org/03/3079.htm.html</a><br>写在前面<br>金陵的3月又是雨季，细雨吻着羞花，极目望窗外，烟雨朦胧的紫金山忽隐忽现，此时最适合读诗与编程。思绪拉回到眼前，开始我们今天的主题－关于如何管理Node的版本。</p>
+<p>Node最近几年可谓风光无限，不仅让前端工程师们逆袭成为「全栈工程师」，也使JavaScript这门动态语言一雪前耻，当年对其的重视相当不够，很多人甚至觉得它是个美丽的错误，不应该存在，如今其借助Node可赚足全球开发者的眼球（28k个star和6k个fork）。大量开发者的贡献使Node版本的迭代速度很快，版本很多（横跨0.6到0.11），所以升级Node版本就成为了一个问题。目前有n和nvm这两个工具可以对Node进行无痛升级，本文简单介绍一下二者的使用。</p>
+<p>n<br>n是Node的一个模块，作者是TJ Holowaychuk（鼎鼎大名的Express框架作者），就像它的名字一样，它的理念就是简单：</p>
+<p>“no subshells, no profile setup, no convoluted api, just simple”<br>安装很简单：</p>
+<p>$ sudo npm install -g n<br>安装完成之后，直接输入n后输出当前已经安装的node版本以及正在使用的版本（前面有一个o），你可以通过移动上下方向键来选择要使用的版本，最后按回车生效。</p>
+<p>$ n<br>    0.10.1<br>        0.10.15<br>    o   0.10.21<br>        0.11.8<br>        如果你要安装其他的版本（比如0.11.12），那么如下：</p>
+<pre><code>$ n 0.11.12
+install : 0.11.12
+   mkdir : /usr/local/n/versions/0.11.12
+      fetch : http://nodejs.org/dist/v0.11.12/node-v0.11.12-darwin-x64.tar.gz
+</code></pre><h4 id="5-9"><a href="#5-9" class="headerlink" title="5.9%"></a>5.9%</h4><pre><code>安装最新的版本
+
+$ n latest
+安装稳定版本
+
+$ n stable
+删除某个版本
+
+$ n rm 0.10.1 
+以指定的版本来执行脚本
+
+$ n use 0.10.21 some.js
+nvm
+nvm全称Node Version Manager，它与n的实现方式不同，其是通过shell脚本实现的。
+
+安装方式有两种：
+
+$ curl https://raw.github.com/creationix/nvm/v0.4.0/install.sh | sh
+或者
+
+$ wget -qO- https://raw.github.com/creationix/nvm/v0.4.0/install.sh | sh
+以上脚本会把nvm库clone到~/.nvm，然后会在~/.bash_profile, ~/.zshrc或`~/.profile末尾添加source，安装完成之后，你可以用以下命令来安装node
+
+$ nvm install 0.10
+使用指定的版本
+
+$ nvm use 0.10
+查看当前已经安装的版本
+
+$ nvm ls
+.nvm
+-&gt;  v0.10.24
+查看正在使用的版本
+
+$ nvm current
+v0.10.24
+以指定版本执行脚本
+
+$ nvm run 0.10.24 myApp.js
+卸载nvm
+
+$ rm -rf ~/.nvm
+总结
+以上就是两种Node版本管理工具的安装和基本使用方法，选择适合你的那一种口味。
+
+参考
+https://github.com/creationix/nvm
+</code></pre><p><a href="https://github.com/visionmedia/n" target="_blank" rel="external">https://github.com/visionmedia/n</a><br>(完)</p>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/nodejs/">nodejs</a>
+</div>
+
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/post/利用n和nvm管理Node的版本/#comments" class="ds-thread-count comments-count-link" data-thread-key="post/利用n和nvm管理Node的版本/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
       <a href="/post/Table表格内容超长时：自动截取、自动换行/" title="Table表格内容超长时：自动截取、自动换行" itemprop="url">Table表格内容超长时：自动截取、自动换行</a>
   </h1>
   <p class="article-author">By
@@ -329,95 +444,6 @@
 
 
 
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/post/Mac-OSX-快捷键-命令行/" title="Mac OSX 快捷键&amp;命令行" itemprop="url">Mac OSX 快捷键&amp;命令行</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="lisx" target="_blank" itemprop="author">lisx</a>
-		
-  <p class="article-time">
-    <time datetime="2016-02-16T00:46:53.000Z" itemprop="datePublished"> 发表于 2016-02-16</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <h2 id="一-Mac-OSX-快捷键"><a href="#一-Mac-OSX-快捷键" class="headerlink" title="一.Mac OSX 快捷键"></a>一.Mac OSX 快捷键</h2><p>ctrl+shift                                    快速放大dock的图标会暂时放大，而如果你开启了dock放大<br>Command+Option+W                将所有窗口关闭<br>Command+W                             将当前窗口关闭(可以关闭Safari标签栏,很实用)<br>Command+Option+M                将所有窗口最小化<br>Command+Q                             关闭当前应用程序(相当于Dock鼠标右键推出.很实用)<br>Command+M                             将目前使用的窗口最小化<br>Command+H                             隐藏当前窗口或者软件</p>
-<p>Command＋tab                         为切换当前工作任务<br>Control＋Command＋S              切换控制条的显示和隐藏<br>Command＋i                              常规信息（显示及设置图标属性）<br>Command＋delete                     移到废纸篓（删除）<br>Optionion+鼠标                         拖图像或文件夹可以将图像或文件夹拷贝到其它文件夹中，而不是移动<br>Command+Shift+backspace     清空废纸篓(再加上option一起按能跳过确认对话框)<br>Command+N                             键可以建立新文件夹 “return”或“enter”或“O”键可以打开所选项目<br>Command+Option+esc             键可以强行退出死机程序 </p>
-<p>Command+Shift+3                    截图(当前屏幕)<br>Command+Shift+4                   截图(自由选取范围)<br>Option＋F12                             关机窗口(能选择关机、重起、睡眠)<br>Command+1                             以图标方式显示<br>Command+2                             以分栏方式显示<br>Command+3                             以列表方式显示<br>Command+4                             以Cover Flow方式显示<br>return或enter                            键可以编辑所选图像或文件夹的名称</p>
-<h2 id="二-Mac-OSX-命令行："><a href="#二-Mac-OSX-命令行：" class="headerlink" title="二.Mac OSX 命令行："></a>二.Mac OSX 命令行：</h2><p>基本命令<br>1、列出文件<br>ls 参数 目录名        例: 看看驱动目录下有什么:ls /System/Library/Extensions<br>参数 -w 显示中文，-l 详细信息， -a 包括隐藏文件<br>2、转换目录<br>cd    例：想到驱动目录下溜达一圈   cd /System/Library/Extensions</p>
-<p>3、建立新目录<br>mkdir 目录名     例：在驱动目录下建一个备份目录 backup     mkdir /System/Library/Extensions/backup<br>在桌面上建一个备份目录 backup    mkdir /User/用户名/Desktop/backup</p>
-<p>4、拷贝文件<br>cp 参数 源文件 目标文件    例：想把桌面的Natit.kext 拷贝到驱动目录中  cp -R /User/用户名/Desktop/Natit.kext /System/Library/Extensions<br>参数R表示对目录进行递归操作，kext在图形界面下看起来是个文件，实际上是个文件夹。<br>把驱动目录下的所有文件备份到桌面backup<br>cp -R /System/Library/Extensions/* /User/用户名/Desktop/backup<br>5、删除文件<br>rm 参数 文件   例：想删除驱动的缓存  rm -rf /System/Library/Extensions.kextcache     rm -rf /System/Library/Extensions.mkext<br>参数－rf 表示递归和强制，千万要小心使用，如果执行了 rm -rf / 你的系统就全没了</p>
-<p>6、移动文件<br>mv 文件   例：想把AppleHDA.Kext 移到桌面    mv /System/Library/Extensions/AppleHDA.kext /User/用户名/Desktop<br>想把AppleHDA.Kext 移到备份目录中   mv /System/Library/Extensions/AppleHDA.kext /System/Library/Extensions/backup</p>
-<p>7、文本编辑<br>nano 文件名   例：编辑natit Info.plist     nano /System/Library/Extensions/Natit.kext/Info.plist</p>
-<p>目录操作：<br>命令名                       功能描述                                             使用举例</p>
-<p>mkdir                        创建一个目录                                       mkdir dirname<br>rmdir                         删除一个目录                                       rmdir dirname<br>mvdir                        移动或重命名一个目录                         mvdir dir1 dir2</p>
-<p>cd                             改变当前目录                                       cd dirname<br>pwd                          显示当前目录的路径名                          pwd<br>ls                              显示当前目录的内容                             ls -la</p>
-<p>文件操作：<br>命令名                                 功能描述                                  使用举例</p>
-<p>cat                                      显示或连接文件                       cat filename<br>od                                       显示非文本文件的内容            od -c filename<br>cp                                      复制文件或目录                        cp file1 file2</p>
-<p>rm                                     删除文件或目录                         rm filename<br>mv                                    改变文件名或所在目录               mv file1 file2<br>find                                  使用匹配表达式查找文件             find . -name “*.c” -print<br>file                                  显示文件类型                                file filename</p>
-<p>选择操作：<br>命令名                             功能描述                                       使用举例</p>
-<p>head                              显示文件的最初几行                       head -20 filename<br>tail                                 显示文件的最后几行                       tail -15 filename<br>cut                                显示文件每行中的某些域                 cut -f1,7 -d: /etc/passwd<br>colrm                            从标准输入中删除若干列                  colrm 8 20 file2</p>
-<p>diff                                比较并显示两个文件的差异                diff file1 file2<br>sort                             排序或归并文件                                      sort -d -f -u file1<br>uniq                           去掉文件中的重复行                                  uniq file1 file2<br>comm                        显示两有序文件的公共和非公共行              comm file1 file2<br>wc                            统计文件的字符数、词数和行数                    wc filename<br>nl                             给文件加上行号                                         nl file1 &gt;file2</p>
-<p>进程操作：<br>命令名                     功能描述                                                 使用举例</p>
-<p>ps                           显示进程当前状态                                     ps u<br>kill                         终止进程                                                     kill -9 30142</p>
-<p>时间操作：<br>命令名                           功能描述                                            使用举例</p>
-<p>date                    显示系统的当前日期和时间                           date<br>cal                                   显示日历                                       cal 8 1996<br>time                         统计程序的执行时间                            time a.out</p>
-<p>网络与通信操作：<br>命令名                                功能描述                                       使用举例</p>
-<p>telnet                                  远程登录                                 telnet hpc.sp.net.edu.cn<br>rlogin                                 远程登录                                 rlogin hostname -l username<br>rsh                       在远程主机执行指定命令                             rsh f01n03 date</p>
-<p>ftp                   在本地主机与远程主机之间传输文件                ftpftp.sp.net.edu.cn<br>rcp                 在本地主机与远程主机 之间复制文件               rcp file1 host1:file2</p>
-<p>ping                   给一个网络主机发送 回应请求                   ping hpc.sp.net.edu.cn<br>mail                          阅读和发送电子邮件                                          mail<br>write                      给另一用户发送报文                                  write username pts/1<br>mesg                    允许或拒绝接收报文                                                 mesg n</p>
-<p>Korn Shell 命令 ：<br> 命令名                                 功能描述                                        使用举例</p>
-<p>history               列出最近执行过的 几条命令及编号                       history<br>r                         重复执行最近执行过的 某条命令                            r -2<br>alias                            给某个命令定义别名                                  alias del=rm -i<br>unalias                     取消对某个别名的定义                                  unalias del</p>
-<p>其它命令<br>命令名                                  功能描述                                         使用举例</p>
-<p>uname                     显示操作系统的有关信息                              uname -a<br>clear                       清除屏幕或窗口内容                                        clear<br>env                        显示当前所有设置过的环境变量                         env<br>who                       列出当前登录的所有用户                                    who<br>whoami                  显示当前正进行操作的用户名                              whoami<br>tty                         显示终端或伪终端的名称                                         tty<br>stty                         显示或重置控制键定义                                        stty -a<br>du                                  查询磁盘使用情况                         du -k subdir<br>df /tmp                          显示文件系统的总空间和可用空间<br>w                                  显示当前系统活动的总信息</p>
-<p>mac 删除文件夹里所有的.svn文件<br>直接在终端里面，执行命令（貌似目录名中不能包含空格）：<br>sudo find /Users/cundong/Documents/source -name “.svn” -exec rm -r {} \;<br>把手机中文件取出来<br>adb pull  /sdcard/360Download/source.apk  /Users/cundong/Desktop/target.apk<br>将MAC中文件推到手机中<br>adb push /Users/cundong/Desktop/source.apk  /sdcard/360Download/target.apk</p>
-<p>反编译APK中java文件<br>1).解压APK，得到 classes.dex；<br>2).下载dex2jar <a href="http://code.google.com/p/dex2jar/" target="_blank" rel="external">http://code.google.com/p/dex2jar/</a><br>    解压<br>    给权限 chmod +x dex2jar.sh<br>    运行 ./dex2jar.sh /Users/cundong/Desktop/xxxx.apk<br>3).下载jd-gui可以直接打开看。 <a href="http://java.decompiler.free.fr/" target="_blank" rel="external">http://java.decompiler.free.fr/</a> </p>
-<p>（不断更新）</p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/macbook/">macbook</a>►<a class="article-category-link" href="/categories/macbook/快捷键/">快捷键</a>
-</div>
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/post/Mac-OSX-快捷键-命令行/#comments" class="ds-thread-count comments-count-link" data-thread-key="post/Mac-OSX-快捷键-命令行/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
 
   <nav id="page-nav" class="clearfix">
     <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">Next<span></span></a>
@@ -459,6 +485,10 @@
 		
 		  
 			<li><a href="/categories/macbook/" title="macbook">macbook<sup>4</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/nodejs/" title="nodejs">nodejs<sup>1</sup></a></li>
 		  
 		
 		  

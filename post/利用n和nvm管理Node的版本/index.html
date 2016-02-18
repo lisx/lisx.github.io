@@ -4,23 +4,26 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>macbook pro终端光标快捷键 | HelloBlog</title>
+    <title>利用n和nvm管理Node的版本 | HelloBlog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="lisx">
     
 
     
-    <meta name="description" content="mac新手收录一下:Ctrl + h        退格删除一个字符，相当于通常的Backspace键Ctrl + u        删除光标之前到行首的字符Ctrl + k        删除光标到行尾的字符Ctrl + c        取消(cancel)当前行输入的命令，相当于Ctrl + BreakCtrl + a        光标移动到行首（Ahead of line），相当于通常的">
+    <meta name="description" content="作者: JeremyWei | 可以转载, 但必须以超链接形式标明文章原始出处和作者信息及版权声明网址: http://it.taocms.org/03/3079.htm.html写在前面金陵的3月又是雨季，细雨吻着羞花，极目望窗外，烟雨朦胧的紫金山忽隐忽现，此时最适合读诗与编程。思绪拉回到眼前，开始我们今天的主题－关于如何管理Node的版本。
+Node最近几年可谓风光无限，不仅让前端工程师们逆袭">
 <meta property="og:type" content="article">
-<meta property="og:title" content="macbook pro终端光标快捷键">
-<meta property="og:url" content="http://lisx.github.io/post/macbook-pro终端光标快捷键/index.html">
+<meta property="og:title" content="利用n和nvm管理Node的版本">
+<meta property="og:url" content="http://lisx.github.io/post/利用n和nvm管理Node的版本/index.html">
 <meta property="og:site_name" content="HelloBlog">
-<meta property="og:description" content="mac新手收录一下:Ctrl + h        退格删除一个字符，相当于通常的Backspace键Ctrl + u        删除光标之前到行首的字符Ctrl + k        删除光标到行尾的字符Ctrl + c        取消(cancel)当前行输入的命令，相当于Ctrl + BreakCtrl + a        光标移动到行首（Ahead of line），相当于通常的">
-<meta property="og:updated_time" content="2016-02-16T00:45:36.000Z">
+<meta property="og:description" content="作者: JeremyWei | 可以转载, 但必须以超链接形式标明文章原始出处和作者信息及版权声明网址: http://it.taocms.org/03/3079.htm.html写在前面金陵的3月又是雨季，细雨吻着羞花，极目望窗外，烟雨朦胧的紫金山忽隐忽现，此时最适合读诗与编程。思绪拉回到眼前，开始我们今天的主题－关于如何管理Node的版本。
+Node最近几年可谓风光无限，不仅让前端工程师们逆袭">
+<meta property="og:updated_time" content="2016-02-18T05:57:07.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="macbook pro终端光标快捷键">
-<meta name="twitter:description" content="mac新手收录一下:Ctrl + h        退格删除一个字符，相当于通常的Backspace键Ctrl + u        删除光标之前到行首的字符Ctrl + k        删除光标到行尾的字符Ctrl + c        取消(cancel)当前行输入的命令，相当于Ctrl + BreakCtrl + a        光标移动到行首（Ahead of line），相当于通常的">
+<meta name="twitter:title" content="利用n和nvm管理Node的版本">
+<meta name="twitter:description" content="作者: JeremyWei | 可以转载, 但必须以超链接形式标明文章原始出处和作者信息及版权声明网址: http://it.taocms.org/03/3079.htm.html写在前面金陵的3月又是雨季，细雨吻着羞花，极目望窗外，烟雨朦胧的紫金山忽隐忽现，此时最适合读诗与编程。思绪拉回到眼前，开始我们今天的主题－关于如何管理Node的版本。
+Node最近几年可谓风光无限，不仅让前端工程师们逆袭">
 
     
     <link rel="alternative" href="/atom.xml" title="HelloBlog" type="application/atom+xml">
@@ -82,14 +85,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/post/macbook-pro终端光标快捷键/" title="macbook pro终端光标快捷键" itemprop="url">macbook pro终端光标快捷键</a>
+      <a href="/post/利用n和nvm管理Node的版本/" title="利用n和nvm管理Node的版本" itemprop="url">利用n和nvm管理Node的版本</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="lisx" target="_blank" itemprop="author">lisx</a>
 		
   <p class="article-time">
-    <time datetime="2016-02-16T00:42:47.000Z" itemprop="datePublished"> 发表于 2016-02-16</time>
+    <time datetime="2016-02-18T05:56:17.000Z" itemprop="datePublished"> 发表于 2016-02-18</time>
     
   </p>
 </header>
@@ -98,11 +101,68 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			
+			<ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-9"><span class="toc-number">1.</span> <span class="toc-text">5.9%</span></a></li></ol>
 		
 		</div>
 		
-		<p>mac新手收录一下:<br>Ctrl + h        退格删除一个字符，相当于通常的Backspace键<br>Ctrl + u        删除光标之前到行首的字符<br>Ctrl + k        删除光标到行尾的字符<br>Ctrl + c        取消(cancel)当前行输入的命令，相当于Ctrl + Break<br>Ctrl + a        光标移动到行首（Ahead of line），相当于通常的Home键<br>Ctrl + e        光标移动到行尾（End of line）<br>Ctrl + l        清屏，相当于执行clear命令<br>Ctrl + p        调出命令历史中的前一条（Previous）命令，相当于通常的上箭头<br>Ctrl + n        调出命令历史中的下一条（Next）命令，相当于通常的上箭头<br>Ctrl + w        删除从光标位置前到当前所处单词（Word）的开头<br>Ctrl + y        粘贴最后一次被删除的单词<br>Alt+←           光标单词间移动（向左）<br>Alt+→           光标单词向右移动</p>
+		<p>作者: JeremyWei | 可以转载, 但必须以超链接形式标明文章原始出处和作者信息及版权声明<br>网址: <a href="http://it.taocms.org/03/3079.htm.html" target="_blank" rel="external">http://it.taocms.org/03/3079.htm.html</a><br>写在前面<br>金陵的3月又是雨季，细雨吻着羞花，极目望窗外，烟雨朦胧的紫金山忽隐忽现，此时最适合读诗与编程。思绪拉回到眼前，开始我们今天的主题－关于如何管理Node的版本。</p>
+<p>Node最近几年可谓风光无限，不仅让前端工程师们逆袭成为「全栈工程师」，也使JavaScript这门动态语言一雪前耻，当年对其的重视相当不够，很多人甚至觉得它是个美丽的错误，不应该存在，如今其借助Node可赚足全球开发者的眼球（28k个star和6k个fork）。大量开发者的贡献使Node版本的迭代速度很快，版本很多（横跨0.6到0.11），所以升级Node版本就成为了一个问题。目前有n和nvm这两个工具可以对Node进行无痛升级，本文简单介绍一下二者的使用。</p>
+<p>n<br>n是Node的一个模块，作者是TJ Holowaychuk（鼎鼎大名的Express框架作者），就像它的名字一样，它的理念就是简单：</p>
+<p>“no subshells, no profile setup, no convoluted api, just simple”<br>安装很简单：</p>
+<p>$ sudo npm install -g n<br>安装完成之后，直接输入n后输出当前已经安装的node版本以及正在使用的版本（前面有一个o），你可以通过移动上下方向键来选择要使用的版本，最后按回车生效。</p>
+<p>$ n<br>    0.10.1<br>        0.10.15<br>    o   0.10.21<br>        0.11.8<br>        如果你要安装其他的版本（比如0.11.12），那么如下：</p>
+<pre><code>$ n 0.11.12
+install : 0.11.12
+   mkdir : /usr/local/n/versions/0.11.12
+      fetch : http://nodejs.org/dist/v0.11.12/node-v0.11.12-darwin-x64.tar.gz
+</code></pre><h4 id="5-9"><a href="#5-9" class="headerlink" title="5.9%"></a>5.9%</h4><pre><code>安装最新的版本
+
+$ n latest
+安装稳定版本
+
+$ n stable
+删除某个版本
+
+$ n rm 0.10.1 
+以指定的版本来执行脚本
+
+$ n use 0.10.21 some.js
+nvm
+nvm全称Node Version Manager，它与n的实现方式不同，其是通过shell脚本实现的。
+
+安装方式有两种：
+
+$ curl https://raw.github.com/creationix/nvm/v0.4.0/install.sh | sh
+或者
+
+$ wget -qO- https://raw.github.com/creationix/nvm/v0.4.0/install.sh | sh
+以上脚本会把nvm库clone到~/.nvm，然后会在~/.bash_profile, ~/.zshrc或`~/.profile末尾添加source，安装完成之后，你可以用以下命令来安装node
+
+$ nvm install 0.10
+使用指定的版本
+
+$ nvm use 0.10
+查看当前已经安装的版本
+
+$ nvm ls
+.nvm
+-&gt;  v0.10.24
+查看正在使用的版本
+
+$ nvm current
+v0.10.24
+以指定版本执行脚本
+
+$ nvm run 0.10.24 myApp.js
+卸载nvm
+
+$ rm -rf ~/.nvm
+总结
+以上就是两种Node版本管理工具的安装和基本使用方法，选择适合你的那一种口味。
+
+参考
+https://github.com/creationix/nvm
+</code></pre><p><a href="https://github.com/visionmedia/n" target="_blank" rel="external">https://github.com/visionmedia/n</a><br>(完)</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -110,7 +170,7 @@
 
 <div class="article-categories">
   <span></span>
-  <a class="article-category-link" href="/categories/macbook/">macbook</a>►<a class="article-category-link" href="/categories/macbook/快捷键/">快捷键</a>
+  <a class="article-category-link" href="/categories/nodejs/">nodejs</a>
 </div>
 
 
@@ -120,7 +180,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://lisx.github.io/post/macbook-pro终端光标快捷键/" data-title="macbook pro终端光标快捷键 | HelloBlog" data-tsina="null" class="share clearfix">
+	  <div data-url="http://lisx.github.io/post/利用n和nvm管理Node的版本/" data-title="利用n和nvm管理Node的版本 | HelloBlog" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -133,19 +193,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/post/Mac-OSX-快捷键-命令行/" title="Mac OSX 快捷键&amp;命令行">
-  <strong>上一篇：</strong><br/>
-  <span>
-  Mac OSX 快捷键&amp;命令行</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/post/redis批量删除key/"  title="redis批量删除key">
+<a href="/post/Table表格内容超长时：自动截取、自动换行/"  title="Table表格内容超长时：自动截取、自动换行">
  <strong>下一篇：</strong><br/> 
- <span>redis批量删除key
+ <span>Table表格内容超长时：自动截取、自动换行
 </span>
 </a>
 </div>
@@ -154,7 +206,7 @@
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="post/macbook-pro终端光标快捷键/" data-title="macbook pro终端光标快捷键" data-url="http://lisx.github.io/post/macbook-pro终端光标快捷键/"></div>
+	<div class="ds-thread" data-thread-key="post/利用n和nvm管理Node的版本/" data-title="利用n和nvm管理Node的版本" data-url="http://lisx.github.io/post/利用n和nvm管理Node的版本/"></div>
 </section>
 
 
@@ -164,7 +216,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- 
+ <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-9"><span class="toc-number">1.</span> <span class="toc-text">5.9%</span></a></li></ol>
  
   </div>
 
