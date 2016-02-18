@@ -4,29 +4,35 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Sublime Text插件：HTML+CSS+JAVASCRIPT+JSON快速格式化 | HelloBlog</title>
+    <title>Table表格内容超长时：自动截取、自动换行 | HelloBlog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="lisx">
     
 
     
-    <meta name="description" content="序言:mac 新手,sublime也没有怎么用过,以前一直在用eclipse.现在有个js文件要格式化所以搜索了一下看到了解决方案:(话说markdown也没有用过这个blog还试用一下markdown)
-在Sublime Text中，按下Command+Shift+P调出命令面板;调用Install Package;输入install 调出 Install Package 选项并回车;(
-这一步">
+    <meta name="description" content="表格内容过长而变形的解决方法。
+在表格加入如下属性设置：style=”TABLE-LAYOUT:fixed;WORD-WRAP:break_word”
+上面显示有超过表格长度的自动截取。如果要表格长度固定，且超过长度时自动换行，则：style=”TABLE-LAYOUT:fixed;WORD-BREAK:break-all”
+此处切勿设置tr 或td的高度
+[CSS table-layout 属性">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Sublime Text插件：HTML+CSS+JAVASCRIPT+JSON快速格式化">
-<meta property="og:url" content="http://lisx.github.io/post/Sublime-Text插件：HTML-CSS-JAVASCRIPT-JSON快速格式化/index.html">
+<meta property="og:title" content="Table表格内容超长时：自动截取、自动换行">
+<meta property="og:url" content="http://lisx.github.io/post/Table表格内容超长时：自动截取、自动换行/index.html">
 <meta property="og:site_name" content="HelloBlog">
-<meta property="og:description" content="序言:mac 新手,sublime也没有怎么用过,以前一直在用eclipse.现在有个js文件要格式化所以搜索了一下看到了解决方案:(话说markdown也没有用过这个blog还试用一下markdown)
-在Sublime Text中，按下Command+Shift+P调出命令面板;调用Install Package;输入install 调出 Install Package 选项并回车;(
-这一步">
-<meta property="og:updated_time" content="2016-02-15T09:17:51.000Z">
+<meta property="og:description" content="表格内容过长而变形的解决方法。
+在表格加入如下属性设置：style=”TABLE-LAYOUT:fixed;WORD-WRAP:break_word”
+上面显示有超过表格长度的自动截取。如果要表格长度固定，且超过长度时自动换行，则：style=”TABLE-LAYOUT:fixed;WORD-BREAK:break-all”
+此处切勿设置tr 或td的高度
+[CSS table-layout 属性">
+<meta property="og:updated_time" content="2016-02-18T03:49:32.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Sublime Text插件：HTML+CSS+JAVASCRIPT+JSON快速格式化">
-<meta name="twitter:description" content="序言:mac 新手,sublime也没有怎么用过,以前一直在用eclipse.现在有个js文件要格式化所以搜索了一下看到了解决方案:(话说markdown也没有用过这个blog还试用一下markdown)
-在Sublime Text中，按下Command+Shift+P调出命令面板;调用Install Package;输入install 调出 Install Package 选项并回车;(
-这一步">
+<meta name="twitter:title" content="Table表格内容超长时：自动截取、自动换行">
+<meta name="twitter:description" content="表格内容过长而变形的解决方法。
+在表格加入如下属性设置：style=”TABLE-LAYOUT:fixed;WORD-WRAP:break_word”
+上面显示有超过表格长度的自动截取。如果要表格长度固定，且超过长度时自动换行，则：style=”TABLE-LAYOUT:fixed;WORD-BREAK:break-all”
+此处切勿设置tr 或td的高度
+[CSS table-layout 属性">
 
     
     <link rel="alternative" href="/atom.xml" title="HelloBlog" type="application/atom+xml">
@@ -88,14 +94,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/post/Sublime-Text插件：HTML-CSS-JAVASCRIPT-JSON快速格式化/" title="Sublime Text插件：HTML+CSS+JAVASCRIPT+JSON快速格式化" itemprop="url">Sublime Text插件：HTML+CSS+JAVASCRIPT+JSON快速格式化</a>
+      <a href="/post/Table表格内容超长时：自动截取、自动换行/" title="Table表格内容超长时：自动截取、自动换行" itemprop="url">Table表格内容超长时：自动截取、自动换行</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="lisx" target="_blank" itemprop="author">lisx</a>
 		
   <p class="article-time">
-    <time datetime="2016-02-15T07:08:39.000Z" itemprop="datePublished"> 发表于 2016-02-15</time>
+    <time datetime="2016-02-18T03:47:14.000Z" itemprop="datePublished"> 发表于 2016-02-18</time>
     
   </p>
 </header>
@@ -104,15 +110,15 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#序言"><span class="toc-number">1.</span> <span class="toc-text">序言:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在Sublime-Text中，按下Command-Shift-P调出命令面板"><span class="toc-number">2.</span> <span class="toc-text">在Sublime Text中，按下Command+Shift+P调出命令面板;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#调用Install-Package"><span class="toc-number">3.</span> <span class="toc-text">调用Install Package;</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#这一步就出现问题我的sublime里没有出现Install-Package…"><span class="toc-number">3.1.</span> <span class="toc-text">这一步就出现问题我的sublime里没有出现Install Package…</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#下载-Package-Control-sublime-package"><span class="toc-number">3.2.</span> <span class="toc-text">下载 Package Control.sublime-package</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#复制文件到对应目录"><span class="toc-number">3.3.</span> <span class="toc-text">复制文件到对应目录:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#输入pretty，并在列表中选择HTML-CSS-JS-Prettify后回车即可安装"><span class="toc-number">4.</span> <span class="toc-text">输入pretty，并在列表中选择HTML-CSS-JS Prettify后回车即可安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#快捷使用方法："><span class="toc-number">5.</span> <span class="toc-text">快捷使用方法：</span></a></li></ol>
+			
 		
 		</div>
 		
-		<h2 id="序言"><a href="#序言" class="headerlink" title="序言:"></a>序言:</h2><p>mac 新手,sublime也没有怎么用过,以前一直在用eclipse.<br>现在有个js文件要格式化所以搜索了一下看到了解决方案:<br>(话说markdown也没有用过这个blog还试用一下markdown)</p>
-<h2 id="在Sublime-Text中，按下Command-Shift-P调出命令面板"><a href="#在Sublime-Text中，按下Command-Shift-P调出命令面板" class="headerlink" title="在Sublime Text中，按下Command+Shift+P调出命令面板;"></a>在Sublime Text中，按下Command+Shift+P调出命令面板;</h2><h2 id="调用Install-Package"><a href="#调用Install-Package" class="headerlink" title="调用Install Package;"></a>调用Install Package;</h2><p>输入install 调出 Install Package 选项并回车;<br>(</p>
-<h3 id="这一步就出现问题我的sublime里没有出现Install-Package…"><a href="#这一步就出现问题我的sublime里没有出现Install-Package…" class="headerlink" title="这一步就出现问题我的sublime里没有出现Install Package…"></a>这一步就出现问题我的sublime里没有出现Install Package…</h3><h3 id="下载-Package-Control-sublime-package"><a href="#下载-Package-Control-sublime-package" class="headerlink" title="下载 Package Control.sublime-package"></a>下载 <a href="https://sublime.wbond.net/Package%20Control.sublime-package" target="_blank" rel="external">Package Control.sublime-package</a></h3><h3 id="复制文件到对应目录"><a href="#复制文件到对应目录" class="headerlink" title="复制文件到对应目录:"></a>复制文件到对应目录:</h3><p>复制下载文件到~/Library/Application Support/Sublime Text 2/Installed Packages目录中,没有就新建一个.有的资料写的复制到Packages目录里我的电脑放到这里是没有生效我又移到Installed Packages的.然后重启sublime,这样就可以调出Install Package了.<br>)</p>
-<h2 id="输入pretty，并在列表中选择HTML-CSS-JS-Prettify后回车即可安装"><a href="#输入pretty，并在列表中选择HTML-CSS-JS-Prettify后回车即可安装" class="headerlink" title="输入pretty，并在列表中选择HTML-CSS-JS Prettify后回车即可安装"></a>输入pretty，并在列表中选择HTML-CSS-JS Prettify后回车即可安装</h2><h2 id="快捷使用方法："><a href="#快捷使用方法：" class="headerlink" title="快捷使用方法："></a>快捷使用方法：</h2><p>举例：<br>打开一个压缩的jquery.min.js文件，选中要格式的部分然后按下Ctrl+Shift+H.</p>
-<p>这篇文章使用markdown的#表示h1 和[文字](href)表示超链接.</p>
+		<p>表格内容过长而变形的解决方法。</p>
+<p>在表格加入如下属性设置：<br>style=”TABLE-LAYOUT:fixed;WORD-WRAP:break_word”</p>
+<p>上面显示有超过表格长度的自动截取。<br>如果要表格长度固定，且超过长度时自动换行，则：<br>style=”TABLE-LAYOUT:fixed;WORD-BREAK:break-all”</p>
+<p>此处切勿设置tr 或td的高度</p>
+<p>[CSS table-layout 属性]{<a href="http://www.w3school.com.cn/cssref/pr_tab_table-layout.asp}" target="_blank" rel="external">http://www.w3school.com.cn/cssref/pr_tab_table-layout.asp}</a><br>[CSS3 word-wrap 属性]{<a href="http://www.w3school.com.cn/cssref/pr_word-wrap.asp}" target="_blank" rel="external">http://www.w3school.com.cn/cssref/pr_word-wrap.asp}</a></p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -120,14 +126,9 @@
 
 <div class="article-categories">
   <span></span>
-  <a class="article-category-link" href="/categories/sublime/">sublime</a>
+  <a class="article-category-link" href="/categories/CSS/">CSS</a>
 </div>
 
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/sublime/">sublime</a>
-  </div>
 
 </div>
 
@@ -135,7 +136,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://lisx.github.io/post/Sublime-Text插件：HTML-CSS-JAVASCRIPT-JSON快速格式化/" data-title="Sublime Text插件：HTML+CSS+JAVASCRIPT+JSON快速格式化 | HelloBlog" data-tsina="null" class="share clearfix">
+	  <div data-url="http://lisx.github.io/post/Table表格内容超长时：自动截取、自动换行/" data-title="Table表格内容超长时：自动截取、自动换行 | HelloBlog" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -148,19 +149,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/post/redis批量删除key/" title="redis批量删除key">
-  <strong>上一篇：</strong><br/>
-  <span>
-  redis批量删除key</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/post/hexo-post/"  title="hexo post">
+<a href="/post/mac终端-terminal-里的快捷键/"  title="mac终端(terminal)里的快捷键">
  <strong>下一篇：</strong><br/> 
- <span>hexo post
+ <span>mac终端(terminal)里的快捷键
 </span>
 </a>
 </div>
@@ -169,7 +162,7 @@
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="post/Sublime-Text插件：HTML-CSS-JAVASCRIPT-JSON快速格式化/" data-title="Sublime Text插件：HTML+CSS+JAVASCRIPT+JSON快速格式化" data-url="http://lisx.github.io/post/Sublime-Text插件：HTML-CSS-JAVASCRIPT-JSON快速格式化/"></div>
+	<div class="ds-thread" data-thread-key="post/Table表格内容超长时：自动截取、自动换行/" data-title="Table表格内容超长时：自动截取、自动换行" data-url="http://lisx.github.io/post/Table表格内容超长时：自动截取、自动换行/"></div>
 </section>
 
 
@@ -179,7 +172,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#序言"><span class="toc-number">1.</span> <span class="toc-text">序言:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在Sublime-Text中，按下Command-Shift-P调出命令面板"><span class="toc-number">2.</span> <span class="toc-text">在Sublime Text中，按下Command+Shift+P调出命令面板;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#调用Install-Package"><span class="toc-number">3.</span> <span class="toc-text">调用Install Package;</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#这一步就出现问题我的sublime里没有出现Install-Package…"><span class="toc-number">3.1.</span> <span class="toc-text">这一步就出现问题我的sublime里没有出现Install Package…</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#下载-Package-Control-sublime-package"><span class="toc-number">3.2.</span> <span class="toc-text">下载 Package Control.sublime-package</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#复制文件到对应目录"><span class="toc-number">3.3.</span> <span class="toc-text">复制文件到对应目录:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#输入pretty，并在列表中选择HTML-CSS-JS-Prettify后回车即可安装"><span class="toc-number">4.</span> <span class="toc-text">输入pretty，并在列表中选择HTML-CSS-JS Prettify后回车即可安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#快捷使用方法："><span class="toc-number">5.</span> <span class="toc-text">快捷使用方法：</span></a></li></ol>
+ 
  
   </div>
 
