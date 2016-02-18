@@ -83,6 +83,95 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
+      <a href="/post/redis批量删除key/" title="redis批量删除key" itemprop="url">redis批量删除key</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="lisx" target="_blank" itemprop="author">lisx</a>
+		
+  <p class="article-time">
+    <time datetime="2016-02-16T00:17:54.000Z" itemprop="datePublished"> 发表于 2016-02-16</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <h2 id="批量删除Key"><a href="#批量删除Key" class="headerlink" title="批量删除Key"></a>批量删除Key</h2><ul>
+<li><p>Redis 中有删除单个 Key 的指令 DEL，但好像没有批量删除 Key 的指令，不过我们可以借助 Linux 的 xargs 指令来完成这个动作</p>
+</li>
+<li><p>redis-cli keys “*” | xargs redis-cli del</p>
+</li>
+</ul>
+<h3 id="如果redis-cli没有设置成系统变量，需要指定redis-cli的完整路径"><a href="#如果redis-cli没有设置成系统变量，需要指定redis-cli的完整路径" class="headerlink" title="如果redis-cli没有设置成系统变量，需要指定redis-cli的完整路径"></a>如果redis-cli没有设置成系统变量，需要指定redis-cli的完整路径</h3><ul>
+<li>//如：/opt/redis/redis-cli keys “*” | xargs /opt/redis/redis-cli del</li>
+</ul>
+<h3 id="如果要指定-Redis-数据库访问密码，使用下面的命令"><a href="#如果要指定-Redis-数据库访问密码，使用下面的命令" class="headerlink" title="如果要指定 Redis 数据库访问密码，使用下面的命令"></a>如果要指定 Redis 数据库访问密码，使用下面的命令</h3><ul>
+<li>redis-cli -a password keys “*” | xargs redis-cli -a password del</li>
+</ul>
+<h3 id="如果要访问-Redis-中特定的数据库，使用下面的命令"><a href="#如果要访问-Redis-中特定的数据库，使用下面的命令" class="headerlink" title="如果要访问 Redis 中特定的数据库，使用下面的命令"></a>如果要访问 Redis 中特定的数据库，使用下面的命令</h3><ul>
+<li><p>//下面的命令指定数据序号为0，即默认数据库</p>
+</li>
+<li><p>redis-cli -n 0 keys “*” | xargs redis-cli -n 0 del</p>
+</li>
+</ul>
+<h2 id="删除所有Key"><a href="#删除所有Key" class="headerlink" title="删除所有Key"></a>删除所有Key</h2><ul>
+<li><p>删除所有Key，可以使用Redis的flushdb和flushall命令</p>
+</li>
+<li><p>//删除当前数据库中的所有Key</p>
+</li>
+<li><p>flushdb</p>
+</li>
+<li><p>//删除所有数据库中的key</p>
+</li>
+<li><p>flushall</p>
+</li>
+<li><p>注：keys 指令可以进行模糊匹配，但如果 Key 含空格，就匹配不到了，暂时还没发现好的解决办法。</p>
+</li>
+</ul>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/redis/">redis</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/post/redis批量删除key/#comments" class="ds-thread-count comments-count-link" data-thread-key="post/redis批量删除key/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
       <a href="/post/Sublime-Text插件：HTML-CSS-JAVASCRIPT-JSON快速格式化/" title="Sublime Text插件：HTML+CSS+JAVASCRIPT+JSON快速格式化" itemprop="url">Sublime Text插件：HTML+CSS+JAVASCRIPT+JSON快速格式化</a>
   </h1>
   <p class="article-author">By
@@ -352,7 +441,11 @@
 		  
 		
 		  
-			<li><a href="/categories/macbook/" title="macbook">macbook<sup>3</sup></a></li>
+			<li><a href="/categories/mac/" title="mac">mac<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/macbook/" title="macbook">macbook<sup>4</sup></a></li>
 		  
 		
 		  
@@ -364,7 +457,7 @@
 		  
 		
 		  
-			<li><a href="/categories/macbook/快捷键/" title="快捷键">快捷键<sup>2</sup></a></li>
+			<li><a href="/categories/macbook/快捷键/" title="快捷键">快捷键<sup>3</sup></a></li>
 		  
 		
 		</ul>
