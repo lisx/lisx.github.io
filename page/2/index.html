@@ -83,6 +83,68 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
+      <a href="/post/mac-vim处理换行符-M/" title="mac vim处理换行符^M" itemprop="url">mac vim处理换行符^M</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="lisx" target="_blank" itemprop="author">lisx</a>
+		
+  <p class="article-time">
+    <time datetime="2016-02-16T01:32:34.000Z" itemprop="datePublished"> 发表于 2016-02-16</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <h2 id="sublime惹的祸"><a href="#sublime惹的祸" class="headerlink" title="sublime惹的祸"></a>sublime惹的祸</h2><p>*用sublime编辑markdown时,下载了一个插件然后更新blog就出问题了没有标题.用vim一看才知道.那个插件把换行符都变成^M了.直接替换还不行.</p>
+<h2 id="在vim编辑模式下输入："><a href="#在vim编辑模式下输入：" class="headerlink" title="在vim编辑模式下输入："></a>在vim编辑模式下输入：</h2><ul>
+<li>:%s/^M/\r/g #^M必须用ctrl+V+M来获得</li>
+<li>这样会替换掉所有的^M为换行，再保存文件就ok</li>
+</ul>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/macbook/">macbook</a>►<a class="article-category-link" href="/categories/macbook/vim/">vim</a>
+</div>
+
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/post/mac-vim处理换行符-M/#comments" class="ds-thread-count comments-count-link" data-thread-key="post/mac-vim处理换行符-M/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
       <a href="/post/Mac-OSX-快捷键-命令行/" title="Mac OSX 快捷键&amp;命令行" itemprop="url">Mac OSX 快捷键&amp;命令行</a>
   </h1>
   <p class="article-author">By
@@ -367,69 +429,6 @@
 	
 	  	<span></span>
 		<a href="/post/Sublime-Text插件：HTML-CSS-JAVASCRIPT-JSON快速格式化/#comments" class="ds-thread-count comments-count-link" data-thread-key="post/Sublime-Text插件：HTML-CSS-JAVASCRIPT-JSON快速格式化/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/post/hexo-post/" title="hexo post" itemprop="url">hexo post</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="lisx" target="_blank" itemprop="author">lisx</a>
-		
-  <p class="article-time">
-    <time datetime="2016-02-15T01:48:24.000Z" itemprop="datePublished"> 发表于 2016-02-15</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p>这里用markdown书写 偶没有用过!<br><a href="http://www.appinn.com/markdown/" target="_blank" rel="external">http://www.appinn.com/markdown/</a></p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/blog/">blog</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/博客/">博客</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/post/hexo-post/#comments" class="ds-thread-count comments-count-link" data-thread-key="post/hexo-post/" data-count-type="comments">&nbsp;</a>
 	
 </div>
 
