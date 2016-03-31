@@ -83,6 +83,60 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
+      <a href="/post/运行ReactNative示例/" title="运行ReactNative示例" itemprop="url">运行ReactNative示例</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="lisx" target="_blank" itemprop="author">lisx</a>
+		
+  <p class="article-time">
+    <time datetime="2016-03-31T05:54:46.000Z" itemprop="datePublished"> 发表于 2016-03-31</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <p>运行ReactNative示例<br>既然感觉ReactNative开发靠谱, 那么我们就来看看ReactNative都能做哪些好玩的东西, 和原生的有哪些区别?<br>示例图 </p>
+<p><img src="http://7xpgda.com1.z0.glb.clouddn.com/UIExplorer_android.png" alt="image"><br><img src="http://7xpgda.com1.z0.glb.clouddn.com/UIExplorer_iphone.png" alt="image"><br>按照文档安装一些命令行工具, 再下载Git代码.<br>Github: <a href="https://github.com/facebook/react-native" target="_blank" rel="external">https://github.com/facebook/react-native</a><br>内容很多, 包含一些依赖库和示例(Example), 下载的有点慢, 耐心等待.<br>下载完成后, 在react-native内, 执行npm install.<br>Android项目执行, 参考ReactAndroid的README.md.<br>在react-native目录, 新建local.properties<br>sdk.dir=/Users/wangchenlong/Installations/android-sdk<br>ndk.dir=/Users/wangchenlong/Installations/android-ndk-r10e<br>执行<br>cd react-native<br>./gradlew :ReactAndroid:assembleDebug<br>再执行<br>./gradlew :ReactAndroid:installArchives<br>启动服务<br>./packager/packager.sh<br>安装项目<br>cd react-native<br>./gradlew :Examples:UIExplorer:android:app:installDebug<br>一定要先启动服务, 再安装项目.<br>出现transforming 100%, 即导入成功.<br>导入项目<br>真机调试, 本人红米note(Android 4.2)<br>摇动手机, 选择Dev Settings-&gt;Debug sever host &amp; port for device. 设置IP地址, 观察本机的IP, 填入即可. 我当前的是<br>192.168.2.202:8081<br>注意一定要设置端口8081, 否则无法加载.<br>Android5.0以上, 直接设置端口即可.<br>adb reverse tcp:8081 tcp:8081<br>参考Android的真机调试文档.<br>IOS模拟器, 太穷没有iPhone. 直接打开open UIExplorer.xcodeproj项目, 执行就可以显示.<br>开发有两种选择, 一种是直接基于ReactNative开发, 一种是把ReactNative集成到现有的App中, 对于第二种, 我们就需要关注, ReactNative会增大多少代码呢?<br>使用最基本的HelloWorld做测试, ReactNative也是生成一个简单HelloWorld的JS. 最新生成的HelloWorld的大小是1.4M, 加上ReactNative的是7.6M, 框架大约6.2M左右, 各位可以权衡一下使用.<br>ReactNative的UIExplorer已经包含了大量示例, 很接近原生, 非常绚丽, 速度也很快. 如Android的ViewPager</p>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/post/运行ReactNative示例/#comments" class="ds-thread-count comments-count-link" data-thread-key="post/运行ReactNative示例/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
       <a href="/post/删除时间段的文件/" title="删除时间段的文件" itemprop="url">删除时间段的文件</a>
   </h1>
   <p class="article-author">By
@@ -355,76 +409,6 @@ install : 0.11.12
 	
 	  	<span></span>
 		<a href="/post/mac终端-terminal-里的快捷键/#comments" class="ds-thread-count comments-count-link" data-thread-key="post/mac终端-terminal-里的快捷键/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/post/mac-挂载远程目录/" title="mac 挂载远程目录" itemprop="url">mac 挂载远程目录</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="lisx" target="_blank" itemprop="author">lisx</a>
-		
-  <p class="article-time">
-    <time datetime="2016-02-17T07:59:17.000Z" itemprop="datePublished"> 发表于 2016-02-17</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <h2 id="使用-sshfs-很容易把服务器上远程目录挂载到本地操作，非常方便。"><a href="#使用-sshfs-很容易把服务器上远程目录挂载到本地操作，非常方便。" class="headerlink" title="使用 sshfs 很容易把服务器上远程目录挂载到本地操作，非常方便。"></a>使用 sshfs 很容易把服务器上远程目录挂载到本地操作，非常方便。</h2><p>在 Mac OSX 使用 brew 很容易安装 sshfs </p>
-<p>安装 brew 点击：<a href="http://brew.sh/index_zh-cn.html" target="_blank" rel="external">http://brew.sh/index_zh-cn.html</a> 或者把下面这个粘贴到终端就可以安装了</p>
-<blockquote>
-<pre><code>ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
-</code></pre><h2 id="命令安装-sshfs"><a href="#命令安装-sshfs" class="headerlink" title="命令安装  sshfs"></a>命令安装  sshfs</h2><pre><code>brew install sshfs
-</code></pre><h2 id="网站下载"><a href="#网站下载" class="headerlink" title="网站下载"></a>网站下载</h2></blockquote>
-<p>下载：osxfuse-2.7.3.dmg <a href="http://osxfuse.github.io/" target="_blank" rel="external">http://osxfuse.github.io/</a></p>
-<p>下载：sshfs-2.5.0.pkg <a href="https://github.com/osxfuse/sshfs/releases/" target="_blank" rel="external">https://github.com/osxfuse/sshfs/releases/</a></p>
-<p>都安装了就搞定了。</p>
-<h2 id="使用-sshfs-挂载远程目录到本地："><a href="#使用-sshfs-挂载远程目录到本地：" class="headerlink" title="使用 sshfs 挂载远程目录到本地："></a>使用 sshfs 挂载远程目录到本地：</h2><blockquote>
-<pre><code>sshfs -C -o reconnect user@host:dir localdir
-</code></pre><p>更多 sshfs 的用法可以 sshfs -h 查看。</p>
-</blockquote>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/mac/">mac</a>
-</div>
-
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/post/mac-挂载远程目录/#comments" class="ds-thread-count comments-count-link" data-thread-key="post/mac-挂载远程目录/" data-count-type="comments">&nbsp;</a>
 	
 </div>
 
