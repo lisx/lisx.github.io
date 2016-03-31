@@ -4,26 +4,31 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>删除时间段的文件 | HelloBlog</title>
+    <title>运行ReactNative示例 | HelloBlog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="lisx">
     
 
     
-    <meta name="description" content="今天遇到服务器要删除rman备份文件用到了一些命令记录一下啊:df -h         查看硬盘存储du -sh *     查看文件的大小
-备份文件每天生成,而且占用内存非常大,不过客户还要尽量保留文件.所以只能删除最早的备份文件,其实应该在配置文件里可以配置.不过前面的人可能没有配置,现在只能手动删除了.用到的命令是:ls -l –time-style=”+%Y-%m-%d” | grep">
+    <meta name="description" content="运行ReactNative示例 mac电脑运行:还需要安卓ndk到官网下载.
+
+按照文档安装一些命令行工具, 再下载Git代码.Github: https://github.com/facebook/react-native内容很多, 包含一些依赖库和示例(Example), 下载的有点慢, 耐心等待.下载完成后, 在react-native内, 执行npm install.Android项目执行">
 <meta property="og:type" content="article">
-<meta property="og:title" content="删除时间段的文件">
-<meta property="og:url" content="http://lisx.github.io/post/删除时间段的文件/index.html">
+<meta property="og:title" content="运行ReactNative示例">
+<meta property="og:url" content="http://lisx.github.io/post/运行ReactNative示例/index.html">
 <meta property="og:site_name" content="HelloBlog">
-<meta property="og:description" content="今天遇到服务器要删除rman备份文件用到了一些命令记录一下啊:df -h         查看硬盘存储du -sh *     查看文件的大小
-备份文件每天生成,而且占用内存非常大,不过客户还要尽量保留文件.所以只能删除最早的备份文件,其实应该在配置文件里可以配置.不过前面的人可能没有配置,现在只能手动删除了.用到的命令是:ls -l –time-style=”+%Y-%m-%d” | grep">
-<meta property="og:updated_time" content="2016-03-30T10:17:59.000Z">
+<meta property="og:description" content="运行ReactNative示例 mac电脑运行:还需要安卓ndk到官网下载.
+
+按照文档安装一些命令行工具, 再下载Git代码.Github: https://github.com/facebook/react-native内容很多, 包含一些依赖库和示例(Example), 下载的有点慢, 耐心等待.下载完成后, 在react-native内, 执行npm install.Android项目执行">
+<meta property="og:image" content="http://lisx.github.io/img/UIExplorer_android.png">
+<meta property="og:image" content="http://lisx.github.io/img/UIExplorer_iphone.png">
+<meta property="og:updated_time" content="2016-03-31T07:52:05.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="删除时间段的文件">
-<meta name="twitter:description" content="今天遇到服务器要删除rman备份文件用到了一些命令记录一下啊:df -h         查看硬盘存储du -sh *     查看文件的大小
-备份文件每天生成,而且占用内存非常大,不过客户还要尽量保留文件.所以只能删除最早的备份文件,其实应该在配置文件里可以配置.不过前面的人可能没有配置,现在只能手动删除了.用到的命令是:ls -l –time-style=”+%Y-%m-%d” | grep">
+<meta name="twitter:title" content="运行ReactNative示例">
+<meta name="twitter:description" content="运行ReactNative示例 mac电脑运行:还需要安卓ndk到官网下载.
+
+按照文档安装一些命令行工具, 再下载Git代码.Github: https://github.com/facebook/react-native内容很多, 包含一些依赖库和示例(Example), 下载的有点慢, 耐心等待.下载完成后, 在react-native内, 执行npm install.Android项目执行">
 
     
     <link rel="alternative" href="/atom.xml" title="HelloBlog" type="application/atom+xml">
@@ -85,14 +90,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/post/删除时间段的文件/" title="删除时间段的文件" itemprop="url">删除时间段的文件</a>
+      <a href="/post/运行ReactNative示例/" title="运行ReactNative示例" itemprop="url">运行ReactNative示例</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="lisx" target="_blank" itemprop="author">lisx</a>
 		
   <p class="article-time">
-    <time datetime="2016-03-30T10:06:39.000Z" itemprop="datePublished"> 发表于 2016-03-30</time>
+    <time datetime="2016-03-31T05:54:46.000Z" itemprop="datePublished"> 发表于 2016-03-31</time>
     
   </p>
 </header>
@@ -101,14 +106,19 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#按照文档安装一些命令行工具-再下载Git代码"><span class="toc-number">1.</span> <span class="toc-text">按照文档安装一些命令行工具, 再下载Git代码.</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#执行"><span class="toc-number">2.</span> <span class="toc-text">执行</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#再执行"><span class="toc-number">3.</span> <span class="toc-text">再执行</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#启动服务"><span class="toc-number">4.</span> <span class="toc-text">启动服务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装项目"><span class="toc-number">5.</span> <span class="toc-text">安装项目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一定要先启动服务-再安装项目"><span class="toc-number">6.</span> <span class="toc-text">一定要先启动服务, 再安装项目.</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#导入项目"><span class="toc-number">7.</span> <span class="toc-text">导入项目</span></a></li></ol>
 		
 		</div>
 		
-		<p>今天遇到服务器要删除rman备份文件用到了一些命令记录一下啊:<br>df -h         查看硬盘存储<br>du -sh *     查看文件的大小</p>
-<p>备份文件每天生成,而且占用内存非常大,不过客户还要尽量保留文件.所以只能删除最早的备份文件,其实应该在配置文件里可以配置.不过前面的人可能没有配置,<br>现在只能手动删除了.用到的命令是:<br>ls -l –time-style=”+%Y-%m-%d” | grep “2015-01”|awk ‘{ print $9 }’|xargs rm -rf</p>
-<p>Awk是一种处理结构数据并输出格式化结果的编程语言， Awk 是其作者 “Aho,Weinberger,Kernighan” 的简称。</p>
-<p>Awk通常被用来进行格式扫描和处理。通过扫描一个或多个文件中的行，查看是否匹配指定的正则表达式，并执行相关的操作。</p>
+		<p>运行ReactNative示例 mac电脑运行:<br>还需要安卓<a href="http://wear.techbrood.com/tools/sdk/ndk/" target="_blank" rel="external">ndk</a>到官网下载.</p>
+<p><img src="/img/UIExplorer_android.png" alt="红米note"><br><img src="/img/UIExplorer_iphone.png" alt="iphone模拟器"></p>
+<h2 id="按照文档安装一些命令行工具-再下载Git代码"><a href="#按照文档安装一些命令行工具-再下载Git代码" class="headerlink" title="按照文档安装一些命令行工具, 再下载Git代码."></a>按照文档安装一些命令行工具, 再下载Git代码.</h2><p>Github: <a href="https://github.com/facebook/react-native" target="_blank" rel="external">https://github.com/facebook/react-native</a><br>内容很多, 包含一些依赖库和示例(Example), 下载的有点慢, 耐心等待.<br>下载完成后, 在react-native内, 执行npm install.<br>Android项目执行, 参考ReactAndroid的README.md.<br>在react-native目录,新建local.properties<br>sdk.dir=/usr/local/opt/android-sdk<br>ndk.dir=/usr/local/opt/android-ndk-r10b</p>
+<h2 id="执行"><a href="#执行" class="headerlink" title="执行"></a>执行</h2><p>cd react-native<br>./gradlew :ReactAndroid:assembleDebug</p>
+<h2 id="再执行"><a href="#再执行" class="headerlink" title="再执行"></a>再执行</h2><p>./gradlew :ReactAndroid:installArchives</p>
+<h2 id="启动服务"><a href="#启动服务" class="headerlink" title="启动服务"></a>启动服务</h2><p>./packager/packager.sh</p>
+<h2 id="安装项目"><a href="#安装项目" class="headerlink" title="安装项目"></a>安装项目</h2><p>cd react-native<br>./gradlew :Examples:UIExplorer:android:app:installDebug</p>
+<h2 id="一定要先启动服务-再安装项目"><a href="#一定要先启动服务-再安装项目" class="headerlink" title="一定要先启动服务, 再安装项目."></a>一定要先启动服务, 再安装项目.</h2><p>出现transforming 100%, 即导入成功.</p>
+<h2 id="导入项目"><a href="#导入项目" class="headerlink" title="导入项目"></a>导入项目</h2><p>真机调试, 本人红米note(Android 4.4) ,打开app白屏,需要在权限管理中设置显示悬浮窗为允许.<br>摇动手机, 选择Dev Settings-&gt;Debug sever host &amp; port for device. 设置IP地址, 观察本机的IP, 填入即可. 我当前的是<br>192.168.4.2:8081<br>注意一定要设置端口8081, 否则无法加载.<br>Android5.0以上, 直接设置端口即可.<br>adb reverse tcp:8081 tcp:8081<br>参考Android的真机调试文档.<br>IOS模拟器, 太穷没有iPhone. 直接打开open UIExplorer.xcodeproj项目, 执行就可以显示.<br>开发有两种选择, 一种是直接基于ReactNative开发, 一种是把ReactNative集成到现有的App中, 对于第二种, 我们就需要关注, ReactNative会增大多少代码呢?<br>使用最基本的HelloWorld做测试, ReactNative也是生成一个简单HelloWorld的JS. 最新生成的HelloWorld的大小是1.4M, 加上ReactNative的是7.6M, 框架大约6.2M左右, 各位可以权衡一下使用.<br>ReactNative的UIExplorer已经包含了大量示例, 很接近原生, 非常绚丽, 速度也很快. 如Android的ViewPager</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -121,7 +131,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://lisx.github.io/post/删除时间段的文件/" data-title="删除时间段的文件 | HelloBlog" data-tsina="null" class="share clearfix">
+	  <div data-url="http://lisx.github.io/post/运行ReactNative示例/" data-title="运行ReactNative示例 | HelloBlog" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -134,19 +144,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/post/运行ReactNative示例/" title="运行ReactNative示例">
-  <strong>上一篇：</strong><br/>
-  <span>
-  运行ReactNative示例</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/post/利用n和nvm管理Node的版本/"  title="利用n和nvm管理Node的版本">
+<a href="/post/删除时间段的文件/"  title="删除时间段的文件">
  <strong>下一篇：</strong><br/> 
- <span>利用n和nvm管理Node的版本
+ <span>删除时间段的文件
 </span>
 </a>
 </div>
@@ -155,7 +157,7 @@
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="post/删除时间段的文件/" data-title="删除时间段的文件" data-url="http://lisx.github.io/post/删除时间段的文件/"></div>
+	<div class="ds-thread" data-thread-key="post/运行ReactNative示例/" data-title="运行ReactNative示例" data-url="http://lisx.github.io/post/运行ReactNative示例/"></div>
 </section>
 
 
@@ -165,7 +167,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#按照文档安装一些命令行工具-再下载Git代码"><span class="toc-number">1.</span> <span class="toc-text">按照文档安装一些命令行工具, 再下载Git代码.</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#执行"><span class="toc-number">2.</span> <span class="toc-text">执行</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#再执行"><span class="toc-number">3.</span> <span class="toc-text">再执行</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#启动服务"><span class="toc-number">4.</span> <span class="toc-text">启动服务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装项目"><span class="toc-number">5.</span> <span class="toc-text">安装项目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一定要先启动服务-再安装项目"><span class="toc-number">6.</span> <span class="toc-text">一定要先启动服务, 再安装项目.</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#导入项目"><span class="toc-number">7.</span> <span class="toc-text">导入项目</span></a></li></ol>
  
   </div>
 
